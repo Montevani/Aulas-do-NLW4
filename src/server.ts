@@ -1,6 +1,10 @@
+import 'reflect-metadata';
 import express from 'express';
 
 const app = express();
+
+import "./database"; //reconhece por padrão que o arquivo que precisa ser importado é o index
+
 
 /**
  * GET => Busca
