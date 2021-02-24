@@ -21,7 +21,7 @@ app.get("/", (resquest, response) => {
 
 app.post("/", (request, response) => {
     return response.json({message: "Os dados foram salvos com sucesso!"});
-})
+});
 
 //As rotas podem ser iguais mas os métodos diferentes
 
