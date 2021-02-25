@@ -13,6 +13,7 @@ import { router } from "./routes";
  */
 //http://localhost:3333/users
 
+app.use(express.json());
 app.use(router);
 
 app.listen(3333, () => console.log("Server is running!"));
