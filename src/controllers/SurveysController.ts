@@ -1,4 +1,4 @@
-import { Request, Response} from "express";
+import { Request, Response } from "express";
 import { getCustomRepository } from "typeorm";
 import { SurveysRepository } from "../repositories/SurveysRepository";
 
@@ -23,6 +23,8 @@ class SurveyController {
         const surveysRepository = getCustomRepository(SurveysRepository);
 
         const all = await surveysRepository.find();
+
+        return response.json(all);
 
     }
 }
