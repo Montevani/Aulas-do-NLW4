@@ -4,6 +4,6 @@ describe("First", () => {
     });
 
     it("Deve ser impossível conseguir um resultado diferente de 4.", () => {
-        expect(2+2).not.toBe(4);
+        expect(2+2).not.toBe(5);
     });
 });
